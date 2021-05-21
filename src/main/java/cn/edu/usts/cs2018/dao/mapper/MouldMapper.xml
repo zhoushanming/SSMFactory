@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.edu.usts.cs2018.dao.mapper.MouldMapper" >
+
+    <resultMap type="cn.edu.usts.cs2018.entity.Mould" id="MouldMap">
+        <id property="id" column="id"></id>
+        <result property="radius" column="radius"></result>
+        <result property="length" column="length"></result>
+    </resultMap>
+
+
+    <insert id="insert" parameterType="cn.edu.usts.cs2018.entity.Mould" keyProperty="id">
+        <choose>
+            <when test="id ==0">
+                insert into mould(radius,length)
+                values (#{radius},#{length});
+
+            </when>
+            <when test="id!=0">
+                insert into mould(id,radius,length)
+                values (#{id},#{radius},#{length});
+
+            </when>
+        </choose>
+
+    </insert>
+
+    <update id="update" parameterType="cn.edu.usts.cs2018.entity.Mould">
+        update mould
+            set radius=#{radius},length=#{length}
+            where id=#{id};
+    </update>
+
+    <delete id="delete" parameterType="int">
+        delete from mould where id=#{id};
+    </delete>
+
+    <select id="getMould" parameterType="Integer" resultMap="MouldMap">
+        select *from mould where id=#{id}
+    </select>
+
+    <select id="getMoulds" resultMap="MouldMap">
+        select * from mould;
+    </select>
+</mapper>

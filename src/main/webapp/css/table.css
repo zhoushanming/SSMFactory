@@ -1,0 +1,25 @@
+table
+{
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+}
+table td, table th
+{
+    border: 1px solid #e3eab0;
+    color: #666;
+    height: 30px;
+}
+table thead th
+{
+    /*background-color: #e3ebb2;*/
+    width: 100px;
+}
+table tr:nth-child(odd)
+{
+    /*background: #fff5b8;*/
+}
+table tr:nth-child(even)
+{
+    /*background: #f9facb;*/
+}

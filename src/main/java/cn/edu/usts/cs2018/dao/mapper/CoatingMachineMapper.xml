@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.edu.usts.cs2018.dao.mapper.CoatingMachineMapper" >
+
+    <resultMap type="cn.edu.usts.cs2018.entity.CoatingMachine" id="CoatingMachineMap">
+        <id property="id" column="id"></id>
+        <result property="status" column="status"></result>
+        <result property="itemId" column="itemId"></result>
+    </resultMap>
+
+
+    <insert id="insert" parameterType="cn.edu.usts.cs2018.entity.CoatingMachine" keyProperty="id">
+        <choose>
+            <when test="id ==0">
+                insert into coatingmachine(status,itemId)
+                values (#{status},#{itemId});
+
+            </when>
+            <when test="id!=0">
+                insert into coatingmachine(id,status,itemId)
+                values (#{id},#{status},#{itemId});
+
+            </when>
+        </choose>
+
+    </insert>
+
+    <update id="update" parameterType="cn.edu.usts.cs2018.entity.CoatingMachine">
+        update coatingmachine
+            set status=#{status},itemId=#{itemId}
+            where id=#{id};
+    </update>
+
+    <update id="setAllAsBreakdown">
+        update coatingmachine set status=2;
+    </update>
+    <delete id="delete" parameterType="int">
+        delete from coatingmachine where id=#{id};
+    </delete>
+
+    <select id="getMachine" parameterType="Integer" resultMap="CoatingMachineMap">
+        select *from coatingmachine where id=#{id}
+    </select>
+    <select id="getMachinesByStatus" parameterType="Integer" resultMap="CoatingMachineMap">
+        select *from coatingmachine where status=#{status}
+    </select>
+    <select id="getAllMachines" resultMap="CoatingMachineMap">
+        select * from coatingmachine;
+    </select>
+</mapper>

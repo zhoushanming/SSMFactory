@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 注意"xsi:schemaLocation="中的顺序,否则会出错！！！！ -->
+<beans
+		xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:p="http://www.springframework.org/schema/p"
+		xmlns:aop="http://www.springframework.org/schema/aop"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xmlns:tx="http://www.springframework.org/schema/tx"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop.xsd
+	 http://www.springframework.org/schema/tx
+	 http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+
+	<!--  通过注解配置 -->
+	<context:annotation-config/>
+	<!-- 指定需要扫描的包 -->
+	<context:component-scan base-package="cn.edu.usts.cs2018.*" />
+
+	<!-- 使用annotation 自动注册bean,并保证@Required,@Autowired的属性被注入 -->
+	<context:component-scan base-package="cn.edu.usts.cs2018.*">
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>
+	<context:component-scan base-package="cn.edu.usts.cs2018.dao" />
+
+	<!--Spring AOP-->
+	<!--  Spring AOP
+	<bean id="logBeforeAdvice" class="cn.edu.usts.eie.aop.advices.LogBeforeAdvice" />
+	<bean id="helloSpeaker" class="cn.edu.usts.eie.aop.advices.HelloSpeaker" />
+	-->
+	<!--<bean id="helloProxy"-->
+	<!--class= "org.springframework.aop.framework.ProxyFactoryBean">-->
+	<!--<property name="target">-->
+	<!--<ref bean="helloSpeaker" />-->
+	<!--</property>-->
+	<!--<property name="interceptorNames">-->
+	<!--<list>-->
+	<!--<value>logBeforeAdvice</value>-->
+	<!--<value>logAfterAdvice</value>-->
+	<!--</list>-->
+	<!--</property>-->
+	<!--</bean>-->
+
+	<aop:aspectj-autoproxy proxy-target-class="true"/>
+	<!--<bean id="logAspect" class="cn.edu.usts.eie.aop.aspect.LogAspect">-->
+	<!--</bean>-->
+
+	<!-- ===========配置数据源============ -->
+
+	<!--读取jdbc.properties -->
+	<context:property-placeholder location="classpath:db.properties"/>
+
+	<!-- 配置数据源2 -->
+	<bean id="dataSource"
+		  class="org.apache.commons.dbcp.BasicDataSource">
+		<!--数据库驱动 -->
+		<property name="driverClassName" value="${jdbc.driver}" />
+		<!--连接数据库的url -->
+		<property name="url" value="${jdbc.url}" />
+		<!--连接数据库的用户名 -->
+		<property name="username" value="${jdbc.username}" />
+		<!--连接数据库的密码 -->
+		<property name="password" value="${jdbc.password}" />
+		<!--最大连接数 -->
+		<property name="maxActive" value="${jdbc.maxActive}" />
+		<!--最大空闲连接  -->
+		<property name="maxIdle" value="${jdbc.maxIdle}" />
+		<!--初始化连接数  -->
+		<property name="initialSize" value="${jdbc.initialSize}" />
+	</bean>
+
+	<!-- 2.配置JDBC模板 -->
+	<bean id="jdbcTemplate"
+		  class="org.springframework.jdbc.core.JdbcTemplate">
+		<!-- 默认必须使用数据源 -->
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<!-- 事务管理器，依赖于数据源 -->
+	<bean id="transactionManager" class=
+			"org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<!--开启事务注解 -->
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+
+	<!--配置MyBatis工厂 -->
+	<bean id="sqlSessionFactory"
+		  class="org.mybatis.spring.SqlSessionFactoryBean">
+		<!--注入数据源 -->
+		<property name="dataSource" ref="dataSource" />
+		<!--指定核心配置文件位置 -->
+		<property name="configLocation" value="classpath:/spring/mybatis-config.xml"/>
+	</bean>
+
+	<!--实例化Dao -->
+	<!--<bean id="customerDao" class="cn.edu.usts.cs2018.dao.CustomerDaoImplMapper">-->
+	<!--&lt;!&ndash; 注入SqlSessionFactory对象实例&ndash;&gt;-->
+	<!--<property name="sqlSessionFactory" ref="sqlSessionFactory" />-->
+	<!--</bean>-->
+
+	<!-- Mapper代理开发（基于MapperFactoryBean） -->
+	<!-- <bean id="customerMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+	    <property name="mapperInterface" value="edu.usts.eie.mapper.CustomerMapper" />
+	    <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+	</bean> -->
+
+	<!-- Mapper代理开发（基于MapperScannerConfigurer）,Mapper接口即为DAO对象 -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="cn.edu.usts.cs2018.dao.mapper" />
+	</bean>
+
+
+</beans>

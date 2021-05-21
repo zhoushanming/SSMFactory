@@ -1,0 +1,51 @@
+2020-06-03 00:00:11,921 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.findUserById] [DEBUG] - ==>  Preparing: select * from tb_user where id=? 
+2020-06-03 00:00:11,958 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.findUserById] [DEBUG] - ==> Parameters: 24(Integer)
+2020-06-03 00:00:12,012 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.findUserById] [DEBUG] - <==      Total: 1
+2020-06-03 00:00:12,015 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.findActivity] [DEBUG] - ==>  Preparing: select * from tb_activity where username=?; 
+2020-06-03 00:00:12,016 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.findActivity] [DEBUG] - ==> Parameters: uchiha(String)
+2020-06-03 00:00:12,029 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.findActivity] [DEBUG] - <==      Total: 1
+2020-06-03 11:30:32,384 [main] [org.mybatis.spring.transaction.SpringManagedTransaction] [DEBUG] - JDBC Connection [jdbc:mysql://localhost:3306/qimo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT, UserName=root@localhost, MySQL Connector/J] will not be managed by Spring
+2020-06-03 11:30:32,407 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.findUserById] [DEBUG] - ==>  Preparing: select * from tb_user where id=? 
+2020-06-03 11:30:32,433 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.findUserById] [DEBUG] - ==> Parameters: 24(Integer)
+2020-06-03 11:30:32,536 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.findUserById] [DEBUG] - <==      Total: 1
+2020-06-03 11:30:50,772 [main] [org.mybatis.spring.transaction.SpringManagedTransaction] [DEBUG] - JDBC Connection [jdbc:mysql://localhost:3306/qimo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT, UserName=root@localhost, MySQL Connector/J] will not be managed by Spring
+2020-06-03 11:30:50,779 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.findUserById] [DEBUG] - ==>  Preparing: select * from tb_user where id=? 
+2020-06-03 11:30:50,808 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.findUserById] [DEBUG] - ==> Parameters: 21(Integer)
+2020-06-03 11:30:50,822 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.findUserById] [DEBUG] - <==      Total: 0
+2020-06-03 11:37:48,606 [main] [org.mybatis.spring.transaction.SpringManagedTransaction] [DEBUG] - JDBC Connection [jdbc:mysql://localhost:3306/qimo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT, UserName=root@localhost, MySQL Connector/J] will not be managed by Spring
+2020-06-03 11:37:48,613 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.insertUser] [DEBUG] - ==>  Preparing: insert into tb_user (id,username,realname,password,cardid,sex,job) values (?,?,?,?,?,?,?); 
+2020-06-03 11:37:48,643 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.insertUser] [DEBUG] - ==> Parameters: 24(Integer), uuu(String), 13(String), 123(String), 11111111(String), nan(String), 12(String)
+2020-06-03 11:37:48,812 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.insertUser] [DEBUG] - <==    Updates: 1
+2020-06-03 11:46:04,056 [main] [org.mybatis.spring.transaction.SpringManagedTransaction] [DEBUG] - JDBC Connection [jdbc:mysql://localhost:3306/qimo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT, UserName=root@localhost, MySQL Connector/J] will not be managed by Spring
+2020-06-03 11:46:04,064 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.insertUser] [DEBUG] - ==>  Preparing: insert into tb_user (id,username,realname,password,cardid,sex,job) values (?,?,?,?,?,?,?); 
+2020-06-03 11:46:04,090 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.insertUser] [DEBUG] - ==> Parameters: 24(Integer), uuu(String), 13(String), 123(String), 11111111(String), nan(String), 12(String)
+2020-06-03 11:47:00,376 [main] [org.mybatis.spring.transaction.SpringManagedTransaction] [DEBUG] - JDBC Connection [jdbc:mysql://localhost:3306/qimo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT, UserName=root@localhost, MySQL Connector/J] will not be managed by Spring
+2020-06-03 11:47:00,383 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.insertUser] [DEBUG] - ==>  Preparing: insert into tb_user (id,username,realname,password,cardid,sex,job) values (?,?,?,?,?,?,?); 
+2020-06-03 11:47:00,411 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.insertUser] [DEBUG] - ==> Parameters: 24(Integer), uuu(String), 13(String), 123(String), 11111111(String), nan(String), 12(String)
+2020-06-03 11:50:20,127 [main] [org.mybatis.spring.transaction.SpringManagedTransaction] [DEBUG] - JDBC Connection [jdbc:mysql://localhost:3306/qimo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT, UserName=root@localhost, MySQL Connector/J] will not be managed by Spring
+2020-06-03 11:50:20,134 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.updateUser] [DEBUG] - ==>  Preparing: update tb_user SET username=?,realname=?,password=?,cardid=?,sex=?,job=? where id=?; 
+2020-06-03 11:50:20,161 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.updateUser] [DEBUG] - ==> Parameters: uchiha(String), 段相龙(String), dxl666(String), ???????????(String), 男(String), 异人(String), 24(Integer)
+2020-06-03 11:50:20,289 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.updateUser] [DEBUG] - <==    Updates: 1
+2020-06-03 11:52:22,510 [main] [org.mybatis.spring.transaction.SpringManagedTransaction] [DEBUG] - JDBC Connection [jdbc:mysql://localhost:3306/qimo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT, UserName=root@localhost, MySQL Connector/J] will not be managed by Spring
+2020-06-03 11:52:22,518 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.updateUser] [DEBUG] - ==>  Preparing: update tb_user SET realname=?,password=?,cardid=?,sex=?,job=? where username=?; 
+2020-06-03 11:52:22,544 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.updateUser] [DEBUG] - ==> Parameters: 许静雷(String), dxl666(String), ???????????(String), 男(String), 异人(String), xjl111(String)
+2020-06-03 11:52:22,547 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.updateUser] [DEBUG] - <==    Updates: 0
+2020-06-03 13:22:30,901 [main] [org.mybatis.spring.transaction.SpringManagedTransaction] [DEBUG] - JDBC Connection [jdbc:mysql://localhost:3306/qimo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT, UserName=root@localhost, MySQL Connector/J] will not be managed by Spring
+2020-06-03 13:22:30,908 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.updateUser] [DEBUG] - ==>  Preparing: update tb_user SET realname=?,password=?,cardid=?,sex=?,job=? where username=?; 
+2020-06-03 13:22:30,932 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.updateUser] [DEBUG] - ==> Parameters: 许静雷(String), dxl666(String), ???????????(String), 男(String), 异人(String), xjl111(String)
+2020-06-03 13:22:30,934 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.updateUser] [DEBUG] - <==    Updates: 0
+2020-06-03 13:24:11,025 [main] [org.mybatis.spring.transaction.SpringManagedTransaction] [DEBUG] - JDBC Connection [jdbc:mysql://localhost:3306/qimo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT, UserName=root@localhost, MySQL Connector/J] will not be managed by Spring
+2020-06-03 13:24:11,034 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.deleteUserById] [DEBUG] - ==>  Preparing: delete from tb_user where id=?; 
+2020-06-03 13:24:11,068 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.deleteUserById] [DEBUG] - ==> Parameters: 4444(Integer)
+2020-06-03 13:24:11,070 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.deleteUserById] [DEBUG] - <==    Updates: 0
+2020-06-03 14:43:59,374 [main] [org.mybatis.spring.transaction.SpringManagedTransaction] [DEBUG] - JDBC Connection [jdbc:mysql://localhost:3306/qimo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT, UserName=root@localhost, MySQL Connector/J] will not be managed by Spring
+2020-06-03 14:43:59,388 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - ==>  Preparing: insert into tb_tour (id,tourname,leader,username,introduction,startdate,enddate) values (?,?,?,?,?,?,?); 
+2020-06-03 14:43:59,511 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - ==> Parameters: 5(Integer), 冬游(String), uchiha(String), uchiha(String), 冬天出去玩(String), 2021-01-25 00:00:00.0(Timestamp), 2021-01-28 00:00:00.0(Timestamp)
+2020-06-03 14:43:59,615 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - <==    Updates: 1
+2020-06-03 14:44:18,387 [main] [org.mybatis.spring.transaction.SpringManagedTransaction] [DEBUG] - JDBC Connection [jdbc:mysql://localhost:3306/qimo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT, UserName=root@localhost, MySQL Connector/J] will not be managed by Spring
+2020-06-03 14:44:18,411 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - ==>  Preparing: insert into tb_tour (id,tourname,leader,username,introduction,startdate,enddate) values (?,?,?,?,?,?,?); 
+2020-06-03 14:44:18,487 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - ==> Parameters: 5(Integer), 冬游(String), uchiha(String), uchiha(String), 冬天出去玩(String), 2021-01-25 00:00:00.0(Timestamp), 2021-01-28 00:00:00.0(Timestamp)
+2020-06-03 14:50:01,966 [main] [org.mybatis.spring.transaction.SpringManagedTransaction] [DEBUG] - JDBC Connection [jdbc:mysql://localhost:3306/qimo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT, UserName=root@localhost, MySQL Connector/J] will not be managed by Spring
+2020-06-03 14:50:01,989 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.findTourByTourname] [DEBUG] - ==>  Preparing: select * from tb_tour where tourname=?; 
+2020-06-03 14:50:02,053 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.findTourByTourname] [DEBUG] - ==> Parameters: 春游(String)
+2020-06-03 14:50:02,086 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.findTourByTourname] [DEBUG] - <==      Total: 2

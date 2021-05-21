@@ -1,0 +1,79 @@
+2020-06-02 15:14:22,256 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.findUserById] [DEBUG] - ==>  Preparing: select * from tb_user where id=? 
+2020-06-02 15:14:22,292 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.findUserById] [DEBUG] - ==> Parameters: 24(Integer)
+2020-06-02 15:14:22,330 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.findUserById] [DEBUG] - <==      Total: 1
+2020-06-02 15:17:31,987 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.insertUser] [DEBUG] - ==>  Preparing: insert into tb_user (username,realname,password,cardid,sex,job) values (?.?,?,?,?,?); 
+2020-06-02 15:17:32,015 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.insertUser] [DEBUG] - ==> Parameters: cth(String), 程天宏(String), cth123(String), 00000000000000000(String), 男(String), 军阀(String)
+2020-06-02 15:18:46,197 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.insertUser] [DEBUG] - ==>  Preparing: insert into tb_user (id,username,realname,password,cardid,sex,job) values (?,?.?,?,?,?,?); 
+2020-06-02 15:18:46,234 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.insertUser] [DEBUG] - ==> Parameters: 12(Integer), cth(String), 程天宏(String), cth123(String), 00000000000000000(String), 男(String), 军阀(String)
+2020-06-02 15:19:36,499 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.insertUser] [DEBUG] - ==>  Preparing: insert into tb_user (id,username,realname,password,cardid,sex,job) values (?,?,?,?,?,?,?); 
+2020-06-02 15:19:36,525 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.insertUser] [DEBUG] - ==> Parameters: 12(Integer), cth(String), 程天宏(String), cth123(String), 00000000000000000(String), 男(String), 军阀(String)
+2020-06-02 15:19:36,582 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.insertUser] [DEBUG] - <==    Updates: 1
+2020-06-02 15:32:27,270 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.insertUser] [DEBUG] - ==>  Preparing: insert into tb_user (id,username,realname,password,cardid,sex,job) values (?,?,?,?,?,?,?); 
+2020-06-02 15:32:27,318 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.insertUser] [DEBUG] - ==> Parameters: 12(Integer), cth(String), 程天宏(String), cth123(String), 00000000000000000(String), 男(String), 军阀(String)
+2020-06-02 15:32:27,323 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.insertUser] [DEBUG] - <==    Updates: 1
+2020-06-02 15:34:33,033 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.updateUser] [DEBUG] - ==>  Preparing: update tb_user SET username=?,realname=?,password=?,cardid=?,sex=?,job=?; where id=?; 
+2020-06-02 15:34:33,061 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.updateUser] [DEBUG] - ==> Parameters: cth(String), 程天宏(String), cth123(String), 111111111111(String), 男(String), 军阀(String), 12(Integer)
+2020-06-02 15:39:08,924 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.updateUser] [DEBUG] - ==>  Preparing: update tb_user SET username=?,realname=?,password=?,cardid=?,sex=?,job=? where id=?; 
+2020-06-02 15:39:08,952 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.updateUser] [DEBUG] - ==> Parameters: cth(String), 程天宏(String), cth123(String), 111111111111(String), 男(String), 军阀(String), 12(Integer)
+2020-06-02 15:39:08,999 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.updateUser] [DEBUG] - <==    Updates: 1
+2020-06-02 15:39:27,021 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.updateUser] [DEBUG] - ==>  Preparing: update tb_user SET username=?,realname=?,password=?,cardid=?,sex=?,job=? where id=?; 
+2020-06-02 15:39:27,050 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.updateUser] [DEBUG] - ==> Parameters: cth(String), 程天宏(String), cth123(String), 0000000000(String), 男(String), 军阀(String), 12(Integer)
+2020-06-02 15:39:27,055 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.updateUser] [DEBUG] - <==    Updates: 1
+2020-06-02 15:51:16,780 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.deleteUserById] [DEBUG] - ==>  Preparing: delete from tb_user where id=?; 
+2020-06-02 15:51:16,806 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.deleteUserById] [DEBUG] - ==> Parameters: 12(Integer)
+2020-06-02 15:51:16,811 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.deleteUserById] [DEBUG] - <==    Updates: 1
+2020-06-02 18:58:17,292 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.deleteUserById] [DEBUG] - ==>  Preparing: delete from tb_user where id=?; 
+2020-06-02 18:58:17,347 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.deleteUserById] [DEBUG] - ==> Parameters: 12(Integer)
+2020-06-02 18:58:17,354 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.deleteUserById] [DEBUG] - <==    Updates: 0
+2020-06-02 18:58:34,035 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - ==>  Preparing: insert into tb_tour (id,tourname,leader,username,introduction,startdate,enddate) values (?,?,?,?,?,?,?); 
+2020-06-02 18:58:34,138 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - ==> Parameters: 3(Integer), 秋游(String), uchiha(String), uchiha(String), 秋天去玩(String), 2020-11-12 00:00:00.0(Timestamp), 2020-11-12 00:00:00.0(Timestamp)
+2020-06-02 18:58:34,154 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - <==    Updates: 1
+2020-06-02 18:58:34,154 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.deleteUserById] [DEBUG] - ==>  Preparing: delete from tb_user where id=?; 
+2020-06-02 18:58:34,155 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.deleteUserById] [DEBUG] - ==> Parameters: 12(Integer)
+2020-06-02 18:58:34,157 [main] [cn.edu.usts.cs2018.dao.mapper.UsersMapper.deleteUserById] [DEBUG] - <==    Updates: 0
+2020-06-02 19:01:35,263 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - ==>  Preparing: insert into tb_tour (id,tourname,leader,username,introduction,startdate,enddate) values (?,?,?,?,?,?,?); 
+2020-06-02 19:01:35,331 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - ==> Parameters: 4(Integer), 秋游(String), uchiha(String), uxjl(String), 秋天去玩(String), 2020-11-12 00:00:00.0(Timestamp), 2020-11-12 00:00:00.0(Timestamp)
+2020-06-02 19:05:00,452 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - ==>  Preparing: insert into tb_tour (id,tourname,leader,username,introduction,startdate,enddate) values (?,?,?,?,?,?,?); 
+2020-06-02 19:05:00,526 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - ==> Parameters: 4(Integer), 秋游(String), uchiha(String), xjl(String), 秋天去玩(String), 2020-11-12 00:00:00.0(Timestamp), 2020-11-12 00:00:00.0(Timestamp)
+2020-06-02 19:05:00,531 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - <==    Updates: 1
+2020-06-02 19:05:24,554 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - ==>  Preparing: insert into tb_tour (id,tourname,leader,username,introduction,startdate,enddate) values (?,?,?,?,?,?,?); 
+2020-06-02 19:05:24,619 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - ==> Parameters: 4(Integer), 秋游(String), uchiha(String), xjl(String), 秋天去玩(String), 2020-11-12 00:00:00.0(Timestamp), 2020-11-12 00:00:00.0(Timestamp)
+2020-06-02 19:05:48,528 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=?; 
+2020-06-02 19:05:48,596 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByTourname] [DEBUG] - ==> Parameters: 秋游(String)
+2020-06-02 19:05:48,601 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByTourname] [DEBUG] - <==    Updates: 0
+2020-06-02 19:07:32,167 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=?; 
+2020-06-02 19:07:32,225 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByTourname] [DEBUG] - ==> Parameters: 秋游(String)
+2020-06-02 19:07:32,228 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByTourname] [DEBUG] - <==    Updates: 0
+2020-06-02 19:08:31,506 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where tourname=?; 
+2020-06-02 19:08:31,565 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByTourname] [DEBUG] - ==> Parameters: 秋游(String)
+2020-06-02 19:08:31,574 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByTourname] [DEBUG] - <==    Updates: 2
+2020-06-02 19:12:18,066 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - ==>  Preparing: insert into tb_tour (id,tourname,leader,username,introduction,startdate,enddate) values (?,?,?,?,?,?,?); 
+2020-06-02 19:12:18,107 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - ==> Parameters: 4(Integer), 秋游(String), uchiha(String), xjl(String), 秋天去玩(String), 2020-11-12 00:00:00.0(Timestamp), 2020-11-12 00:00:00.0(Timestamp)
+2020-06-02 19:12:18,108 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - <==    Updates: 1
+2020-06-02 19:15:34,662 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - ==>  Preparing: insert into tb_tour (id,tourname,leader,username,introduction,startdate,enddate) values (?,?,?,?,?,?,?); 
+2020-06-02 19:15:34,698 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.insertTour] [DEBUG] - ==> Parameters: 4(Integer), 秋游(String), uchiha(String), xjl(String), 秋天去玩(String), 2020-11-12 00:00:00.0(Timestamp), 2020-11-12 00:00:00.0(Timestamp)
+2020-06-02 19:16:11,723 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 19:19:21,893 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 19:20:30,931 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 19:27:20,974 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 19:29:31,459 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 19:34:25,848 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 19:36:16,684 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 19:38:16,980 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 19:39:14,339 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 19:40:10,146 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 19:41:34,863 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 19:43:41,904 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 19:44:51,498 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 19:44:54,324 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 19:45:34,737 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 19:56:09,951 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 19:57:53,814 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 19:58:46,374 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 19:59:28,636 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 19:59:51,340 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 20:00:17,235 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 20:14:05,728 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 22:16:46,432 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-02 22:16:46,466 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==> Parameters: cth(String), 秋游(String)
+2020-06-02 22:16:46,474 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - <==    Updates: 0

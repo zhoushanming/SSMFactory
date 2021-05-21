@@ -1,0 +1,12 @@
+2020-06-07 15:17:47,759 [main] [org.mybatis.spring.transaction.SpringManagedTransaction] [DEBUG] - JDBC Connection [jdbc:mysql://localhost:3306/qimo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT, UserName=root@localhost, MySQL Connector/J] will not be managed by Spring
+2020-06-07 15:17:47,765 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByLeader] [DEBUG] - ==>  Preparing: delete from tb_tour where leader=?; 
+2020-06-07 15:17:47,788 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByLeader] [DEBUG] - ==> Parameters: null
+2020-06-07 15:17:47,790 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByLeader] [DEBUG] - <==    Updates: 0
+2020-06-07 15:21:44,469 [main] [org.mybatis.spring.transaction.SpringManagedTransaction] [DEBUG] - JDBC Connection [jdbc:mysql://localhost:3306/qimo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT, UserName=root@localhost, MySQL Connector/J] will not be managed by Spring
+2020-06-07 15:21:44,475 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByLeader] [DEBUG] - ==>  Preparing: delete from tb_tour where leader=?; 
+2020-06-07 15:21:44,497 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByLeader] [DEBUG] - ==> Parameters: null
+2020-06-07 15:21:44,498 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByLeader] [DEBUG] - <==    Updates: 0
+2020-06-07 15:24:56,254 [main] [org.mybatis.spring.transaction.SpringManagedTransaction] [DEBUG] - JDBC Connection [jdbc:mysql://localhost:3306/qimo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT, UserName=root@localhost, MySQL Connector/J] will not be managed by Spring
+2020-06-07 15:24:56,263 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==>  Preparing: delete from tb_tour where username=? and tourname=?; 
+2020-06-07 15:24:56,290 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - ==> Parameters: xjl(String), 春游(String)
+2020-06-07 15:24:56,415 [main] [cn.edu.usts.cs2018.dao.mapper.TourMapper.deleteTourByUsernameTourname] [DEBUG] - <==    Updates: 1

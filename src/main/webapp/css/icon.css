@@ -1,0 +1,15 @@
+.icon-house
+{    background: url('../images/icons/house.png') no-repeat scroll center center transparent;
+}
+.icon-lock_add
+{    background: url('../images/icons/lock_add.png') no-repeat scroll center center transparent;
+}
+.icon-lock_delete
+{    background: url('../images/icons/lock_delete.png') no-repeat scroll center center transparent;
+}
+.icon-lock_edit
+{    background: url('../images/icons/lock_edit.png') no-repeat scroll center center transparent;
+}
+.icon-lock_open
+{    background: url('../images/icons/lock_open.png') no-repeat scroll center center transparent;
+}
